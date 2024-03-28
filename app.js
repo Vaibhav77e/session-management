@@ -42,9 +42,17 @@ app.get('/login',(req,res)=>{
     res.render('login');
 });
 
+app.post('/login',(res,req)=>{});
+
 app.get('/register',(req,res)=>{
     res.render('register');
 });
+
+app.post('/register',(res,req)=>{});
+
+app.get('/dashboard',(req,res)=>{
+    res.render('dashboard');
+})
 
 app.listen(PORT ,()=>{
     console.log(`Server started on ${PORT}`);
